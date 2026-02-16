@@ -30,6 +30,9 @@ ALLOWED_HOSTS = [
     'laund-3.onrender.com',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://laund-3.onrender.com",
+]
 
 # Application definition
 
