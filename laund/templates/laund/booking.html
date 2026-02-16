@@ -1,0 +1,15 @@
+
+{% extends 'laund/partials/base.html' %}
+{% block content %}
+<div class="container mt-5">
+<h3>Book Pickup</h3>
+<form method=post>{% csrf_token %}
+<input name=name class=form-control placeholder="Name">
+<input name=phone class=form-control placeholder="Phone">
+<textarea name=address class=form-control placeholder="Address"></textarea>
+<input name=service class=form-control placeholder="Service">
+<input type=date name=date class=form-control>
+<input type=time name=time class=form-control>
+<button class="btn btn-success mt-3">Continue</button>
+</form></div>
+{% endblock %}

@@ -1,0 +1,11 @@
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script>
+PaystackPop.setup({
+ key:'pk_test_your_key',
+ email:'customer@email.com',
+ amount:{{amount}},
+ ref:'{{ref}}',
+ callback:function(){alert('Payment Successful');}
+}).openIframe();
+</script>
